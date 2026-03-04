@@ -1801,6 +1801,7 @@ class AdkWebServer:
         proactive_audio: bool | None = Query(default=None),
         enable_affective_dialog: bool | None = Query(default=None),
         enable_session_resumption: bool | None = Query(default=None),
+        save_live_blob: bool = Query(default=False),
     ) -> None:
       await websocket.accept()
 
@@ -1832,6 +1833,7 @@ class AdkWebServer:
                 if enable_session_resumption is not None
                 else None
             ),
+            save_live_blob=save_live_blob,
         )
         async with Aclosing(
             runner.run_live(

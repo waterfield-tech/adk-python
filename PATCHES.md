@@ -2,6 +2,7 @@
 
 Patches on top of v1.27.2. Each patch has a corresponding upstream issue.
 
+- wti: expose save_live_blob query param on /run_live endpoint (upstream: https://github.com/google/adk-python/issues/4707)
 
 ## Making changes
 
