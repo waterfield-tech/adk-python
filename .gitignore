@@ -103,7 +103,6 @@ Thumbs.db
 # Developers should symlink or copy AGENTS.md and add their own overrides locally
 .adk/
 .claude/
-CLAUDE.md
 .cursor/
 .cursorrules
 .cursorignore
